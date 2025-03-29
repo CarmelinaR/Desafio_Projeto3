@@ -1,0 +1,75 @@
+ion-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #666;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #ff0676;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 20px; /* Adiciona um espaçamento à esquerda */
+  padding-right: 20px;
+}
+
+span {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+  padding-left: 20px; /* Adiciona um espaçamento à esquerda */
+  padding-right: 20px;
+}
+
+ion-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(212, 205, 205, 0.63);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+ion-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+ion-input {
+  --border-color: #ff0676;
+  --border-width: 2px;
+  --placeholder-color: #ccc;
+  --background: #f1f1f1;
+  --color: #333;
+  margin-top: 10px; /* Aumenta o espaço entre o label e o input */
+  font-size: 16px; /* Define o tamanho da fonte */
+}
+
+ion-input:focus {
+  --border-color: #9545c4;
+}
+
+ion-button {
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+  font-size: 16px;
+  background-color: #ff0676;
+}

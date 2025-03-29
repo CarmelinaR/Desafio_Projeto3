@@ -1,0 +1,79 @@
+ion-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  --background: #f8f9fa;
+  height: auto;
+}
+
+p {
+  font-size: 24px;
+  color: #ff0676;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+ion-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ion-card-header {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+ion-card-title {
+  font-size: 18px;
+  color: #333;
+}
+
+ion-select {
+  --background: #f1f1f1;
+  --border-color: #ff0676;
+  --border-width: 2px;
+  --color: #333;
+  --placeholder-color: #ccc;
+  margin-top: 15px;
+  font-size: 26px;
+}
+
+ion-select:focus {
+  --border-color: #007bff;
+}
+
+ion-item {
+  margin-top: 15px;
+}
+
+ion-textarea {
+  --background: #f1f1f1;
+  --border-color: #ff0676;
+  --border-width: 2px;
+  --color: #333;
+  --placeholder-color: #ccc;
+  font-size: 16px;
+  padding: 10px;
+}
+
+ion-button {
+  width: 100%;
+  margin-top: 25px;
+  height: 40px;
+  font-size: 26px;
+  background-color: #ff0676;
+}
+
+.botao-container {
+  margin-top: 40px;
+}

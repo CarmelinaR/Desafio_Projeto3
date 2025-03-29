@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<h1>Estamos felizes de te ver por aqui!</h1>
+<span>Relaxe e nos conte como você está</span>
+
+<ion-content class="ion-padding">
+  <!-- Imagens motivacionais-->
+  <ion-slides pager="true">
+    <ion-slide>
+      <p>Acredite no seu potencial.</p>
+      <img src="assets/motivacional1.jpg" alt="Motivacional 1" />
+
+    </ion-slide>
+    <ion-slide>
+      <p>Cada passo conta!</p>
+      <img src="assets/motivacional2.jpg" alt="Motivacional 2" />
+
+    </ion-slide>
+    <ion-slide>
+      <p>Persista, o resultado vem.</p>
+      <img src="assets/motivacional3.jpg" alt="Motivacional 3" />
+
+    </ion-slide>
+  </ion-slides>
+
+  <!-- Botão para o Diário -->
+  <ion-button expand="block" (click)="navigateToDiario()">
+    Ir para o Diário
+  </ion-button>
+</ion-content>

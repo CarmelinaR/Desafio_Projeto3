@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Diário</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <p>Bem-vindo ao seu diário!</p>
+
+  <ion-grid>
+    <ion-row>
+      <!-- Iterar pelos dias da semana e exibir para o usuário -->
+      <ion-col *ngFor="let day of daysOfWeek" size="auto">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>{{ day }}</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <!-- Seleção de humor para cada dia -->
+            <ion-select [(ngModel)]="moodEntries[day]" (ionChange)="saveMood(selectedDate, day, $event.detail.value)" interface="popover">
+              <ion-select-option *ngFor="let emoji of emojis" [value]="emoji">{{ emoji }}</ion-select-option>
+            </ion-select>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<div class="botao-container">
+  <ion-button expand="full" [routerLink]="'/evolucao'">Ver Evolução</ion-button>
+</div>

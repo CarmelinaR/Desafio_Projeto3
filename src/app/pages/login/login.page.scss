@@ -1,0 +1,69 @@
+ion-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  --background: #f8f9fa;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  box-sizing: border-box; /* Garante que o padding não afete o tamanho total */
+  margin: 0 auto; /* Garante que a caixa fique centralizada */
+}
+
+h1 {
+  font-size: 24px;
+  color: #ff0676;
+  margin-bottom: 5px;
+}
+
+span {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+ion-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+ion-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+ion-input {
+  --border-color: #ff0676;
+  --border-width: 2px;
+  --placeholder-color: #ccc;
+  --background: #f1f1f1;
+  --color: #333;
+  margin-top: 20px; /* Aumenta o espaço entre o label e o input */
+  font-size: 16px; /* Define o tamanho da fonte */
+}
+
+ion-input:focus {
+  --border-color: #007bff;
+}
+
+ion-button {
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+  font-size: 16px;
+  background-color: #ff0676;
+}
